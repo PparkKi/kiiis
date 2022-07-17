@@ -21,7 +21,7 @@ const HeaderMenu = () => {
   const linkTo = [
     "communit/cafe",
     "intro",
-    "custumer/list",
+    "customer/list",
     `${userData ? "" : "account/login"}`,
   ];
 
