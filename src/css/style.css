@@ -852,6 +852,13 @@ input[type="number"]::-webkit-inner-spin-button {
   background-size: cover;
 }
 
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  outline: none !important;
+}
+
 /*----------------- communit -----------------*/
 
 
@@ -860,6 +867,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .list-style-dot li {
   list-style: disc;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #7b517f !important;
 }
 
 /*----------------- intro -----------------*/
@@ -888,6 +899,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .color-3c3c3c {
   color: #3c3c3c;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #7b517f !important;
 }
 
 /*----------------- customer -----------------*/

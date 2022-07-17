@@ -5,20 +5,11 @@ import { dbService } from "fbase";
 import { doc, updateDoc } from "firebase/firestore";
 
 import Pagination from "@mui/material/Pagination";
-import { styled } from "@mui/material/styles";
 
 const CustomerBoard = ({ board }) => {
   const itemsPerPage = 10;
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
-
-  const ColorPagination = styled(Pagination)({
-    ul: {
-      "& .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
-        backgroundColor: "#7b517f",
-      },
-    },
-  });
 
   const handleChange = (event, value) => {
     setPage(value);
@@ -77,7 +68,7 @@ const CustomerBoard = ({ board }) => {
         </tbody>
       </table>
 
-      <ColorPagination
+      <Pagination
         count={Math.ceil(board.length / 10)}
         page={page}
         onChange={handleChange}

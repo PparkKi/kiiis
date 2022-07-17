@@ -9,21 +9,9 @@ import IntroEx from "components/IntroEx";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import { styled } from "@mui/material/styles";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
-  const ColorTabs = styled(Tabs)({
-    div: {
-      "& .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected": {
-        color: "#7b517f",
-      },
-      "& .css-1aquho2-MuiTabs-indicator": {
-        backgroundColor: "#7b517f",
-      },
-    },
-  });
 
   return (
     <div
@@ -70,15 +58,23 @@ const Intro = () => {
 
       <div className="max-width-1000 mx-auto">
         <Box sx={{ width: "100%" }}>
-          <ColorTabs
+          <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
             sx={{ borderBottom: 1, borderColor: "#7b517f" }}
           >
-            <Tab label="카페 공간 사용법" {...a11yProps(0)} />
-            <Tab label="카페 공간 제작 설명" {...a11yProps(1)} />
-          </ColorTabs>
+            <Tab
+              label="카페 공간 사용법"
+              {...a11yProps(0)}
+              sx={{ color: "#7b517f !important" }}
+            />
+            <Tab
+              label="카페 공간 제작 설명"
+              {...a11yProps(1)}
+              sx={{ color: "#7b517f !important" }}
+            />
+          </Tabs>
 
           <TabPanel value={value} index={0} className="flex justify-content">
             <IntroUse />

@@ -7,7 +7,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
-import { styled } from "@mui/material/styles";
 import { HiOutlineSearch } from "react-icons/hi";
 
 const CommFilter = ({ cafeAllData }) => {
@@ -15,23 +14,6 @@ const CommFilter = ({ cafeAllData }) => {
   const [keyword, setKeyword] = useState("");
   const [searchCafe, setSearchCafe] = useState(cafeAllData);
   const [selected, setSelected] = useState(true);
-
-  const ColorSelect = styled(Select)({
-    "& .css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
-      border: "none",
-    },
-  });
-  const ColorTextField = styled(TextField)({
-    "& .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root": {
-      borderRadius: "30px",
-      backgroundColor: "#fff",
-    },
-    "& .css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
-      border: "none",
-      boxShadow:
-        "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)",
-    },
-  });
 
   const isMobile = useMediaQuery({
     query: "(min-width:480px)",
@@ -92,21 +74,37 @@ const CommFilter = ({ cafeAllData }) => {
           : "flex flex-column justify-content mt-1 mb-2"
       }
     >
-      <ColorSelect
+      <Select
         value={selected}
         onChange={handleChange}
         className="border-radius-30px bgWhite text-color-7b517f box-shadow-0"
+        InputProps={{
+          style: {
+            outline: "none",
+            border: "none",
+          },
+        }}
       >
         <MenuItem value={true}>카페 이름</MenuItem>
         <MenuItem value={false}>카페 주소</MenuItem>
-      </ColorSelect>
+      </Select>
 
-      <ColorTextField
+      <TextField
         id="outlined-search"
         type="search"
         placeholder="검색어를 입력해 주세요."
         value={keyword}
         onChange={onChange}
+        InputProps={{
+          style: {
+            borderRadius: "30px",
+            backgroundColor: "#fff",
+            outline: "none",
+            border: "none",
+            boxShadow:
+              "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)",
+          },
+        }}
       />
 
       <Button
