@@ -10,12 +10,12 @@ import Select from "@mui/material/Select";
 import { styled } from "@mui/material/styles";
 import { HiOutlineSearch } from "react-icons/hi";
 
-const ColorSelect = styled(Select)(({ theme }) => ({
+const ColorSelect = styled(Select)({
   "& .css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
     border: "none",
   },
-}));
-const ColorTextField = styled(TextField)(({ theme }) => ({
+});
+const ColorTextField = styled(TextField)({
   "& .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root": {
     borderRadius: "30px",
     backgroundColor: "#fff",
@@ -23,9 +23,9 @@ const ColorTextField = styled(TextField)(({ theme }) => ({
   "& .css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
     border: "none",
     boxShadow:
-      "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)",
+      "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%) !important",
   },
-}));
+});
 
 const CommFilter = ({ cafeAllData }) => {
   const dispatch = useDispatch();

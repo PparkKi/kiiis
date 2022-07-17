@@ -7,13 +7,13 @@ import { doc, updateDoc } from "firebase/firestore";
 import Pagination from "@mui/material/Pagination";
 import { styled } from "@mui/material/styles";
 
-const ColorPagination = styled(Pagination)(({ theme }) => ({
+const ColorPagination = styled(Pagination)({
   ul: {
     "& .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
       backgroundColor: "#7b517f",
     },
   },
-}));
+});
 
 const CustomerBoard = ({ board }) => {
   const itemsPerPage = 10;
