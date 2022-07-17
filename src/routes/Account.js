@@ -30,8 +30,8 @@ const Account = () => {
   };
 
   return (
-    <div className="flex align-items-center mt-7 flex-column ">
-      <h1 className="text-s2 text-bold text-shadow-10">
+    <div className="flex align-items-center mt-7 flex-column px-1">
+      <h1 className="text-s2 text-bold text-shadow-10 text-center">
         카페 공간에 오신걸 환영합니다.
       </h1>
       <AccForm accVal={accVal} />
