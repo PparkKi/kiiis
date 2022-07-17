@@ -78,12 +78,6 @@ const CommFilter = ({ cafeAllData }) => {
         value={selected}
         onChange={handleChange}
         className="border-radius-30px bgWhite text-color-7b517f box-shadow-0"
-        InputProps={{
-          style: {
-            outline: "none",
-            border: "none",
-          },
-        }}
       >
         <MenuItem value={true}>카페 이름</MenuItem>
         <MenuItem value={false}>카페 주소</MenuItem>
@@ -95,16 +89,6 @@ const CommFilter = ({ cafeAllData }) => {
         placeholder="검색어를 입력해 주세요."
         value={keyword}
         onChange={onChange}
-        InputProps={{
-          style: {
-            borderRadius: "30px",
-            backgroundColor: "#fff",
-            outline: "none",
-            border: "none",
-            boxShadow:
-              "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)",
-          },
-        }}
       />
 
       <Button

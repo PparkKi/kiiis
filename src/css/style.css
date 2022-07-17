@@ -852,11 +852,15 @@ input[type="number"]::-webkit-inner-spin-button {
   background-size: cover;
 }
 
-.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline,
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+.css-fvipm8.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-1v4ccyo.Mui-focused .MuiOutlinedInput-notchedOutline {
   border: none !important;
   outline: none !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 30px !important;
+  background-color: #fff !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%) !important;
 }
 
 /*----------------- communit -----------------*/
@@ -869,7 +873,7 @@ input[type="number"]::-webkit-inner-spin-button {
   list-style: disc;
 }
 
-.css-1aquho2-MuiTabs-indicator {
+.css-ttwr4n {
   background-color: #7b517f !important;
 }
 
@@ -901,7 +905,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #3c3c3c;
 }
 
-.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.css-1omp2b7.Mui-selected {
   background-color: #7b517f !important;
 }
 
