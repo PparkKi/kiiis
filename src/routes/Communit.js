@@ -71,10 +71,10 @@ const Communit = ({ cafeAllData }) => {
                 className={
                   isMobile
                     ? "flex flex-row justify-content-start align-items-center pxy-3-0 border-bottom-1"
-                    : "flex flex-column justify-content-start align-items-center pt-15 border-bottom-1"
+                    : "flex flex-column justify-content-start align-items-stretch pt-15 border-bottom-1"
                 }
               >
-                <div className="mr-30px flex-1">
+                <div className="flex-1">
                   <div className="width-150px height-150px mx-auto">
                     <img
                       src={cafeData.fileUrl}
