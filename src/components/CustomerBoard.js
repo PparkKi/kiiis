@@ -34,6 +34,7 @@ const CustomerBoard = ({ board }) => {
 
   return (
     <>
+      <p>table</p>
       <table className="width-100p border-top-2-3c3c3c">
         <caption></caption>
         <colgroup>
