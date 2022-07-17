@@ -11,19 +11,19 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 
-const ColorTabs = styled(Tabs)({
-  div: {
-    "& .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected": {
-      color: "#7b517f",
-    },
-    "& .css-1aquho2-MuiTabs-indicator": {
-      backgroundColor: "#7b517f",
-    },
-  },
-});
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+
+  const ColorTabs = styled(Tabs)({
+    div: {
+      "& .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected": {
+        color: "#7b517f",
+      },
+      "& .css-1aquho2-MuiTabs-indicator": {
+        backgroundColor: "#7b517f",
+      },
+    },
+  });
 
   return (
     <div
