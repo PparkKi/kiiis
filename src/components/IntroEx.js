@@ -18,10 +18,6 @@ const IntroEx = () => {
             상태 관리는 React Redux의 useDispatch, useSelector를 사용했습니다
           </li>
           <li>
-            Redux의 모든 기능을 사용하진 않았으며 이유는 아직 그 기능들에 대해서
-            지식이 없어서입니다..
-          </li>
-          <li>
             React persist 라이브러리로 데이터를 LocalStorage에 저장하여
             새로고침했을 때에도 데이터를 유지하였습니다
           </li>
